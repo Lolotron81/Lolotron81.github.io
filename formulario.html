@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title> Hamburguesería Los Delfines </title>
+    <meta name="author" content="Manuel Leal Medina">
+    <meta name="description" content="Los Mejores Camperos de Máalaga">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a Hoja de EStilo -->
+    <link rel="stylesheet" href="./styles/formularios.css">
+    <!-- Letra de cabecera -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <!-- Letra de la barra de navegación  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="./index.html">
+                <img src="./images/logo.jpg" class="imagencabecera">
+            </a>
+        </div>
+        <div>
+            <h1> <a href="./index.html"> BOCATERÍA LOS DELFINES </a> </h1>
+        </div>
+        <div>
+            <a href="./index.html">
+                <img src="./images/logo.jpg" class="imagencabecera">
+            </a>
+        </div>
+    </header>
+    <nav>
+        <section>
+            <h2> <a href="./hamburguesa.html" target="_blank"> HAMBURGUESAS </a> </h2>
+        </section>
+        <section>
+            <h2> <a href="./camperos.html" target="_blank"> CAMPEROS </a> </h2>
+        </section>
+        <section>
+            <h2> <a href="./bocadillos.html" target="_blank"> BOCADILLOS </a> </h2>
+        </section>
+        <section>
+            <h2> <a href="./picar.html" target="_blank"> PARA PICAR </a> </h2>
+        </section>
+        <section>
+            <h2> <a href="./formulario.html" target="_blank"> PIDE PARA CASA </a> </h2>
+        </section>
+    </nav>
+    <article>
+        <h2>
+            Se encuentra en la sección de Pida para Casa. Lamentablemente esta sección está cerrada de momento porque estamos modernizando nuestro sistema de reparto
+            pero nos encantaría conocerle y tenerle en nuestra base de datos de clientes vip. Si nos concede unos minutos rellenando este formulario tendrá un
+            <u><strong> 2x1 en su primer pedido. </strong></u>
+        </h2>
+    </article>
+
+    <section class="formulario">
+        <form>
+            <div class="form-group">
+                <label for="nombre"> <h2> NOMBRE </h2> </label>
+                <input type="text" id="nombre" name="nombre" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóú](\s[A-ZÁÉÍÓÚÑ][a-záéíóú])?|[A-ZÁÉÍÓÚÑ][a-záéíóú]+(\s[A-ZÁÉÍÓÚÑ][a-záéíóú]+){1,2}+\s[A-ZÁÉÍÓÚÑ][a-záéíóú]?" title="Ingresa un nombre coherente." required>
+            </div> 
+            <div class="form-group">
+                <label for="apellidos"> <h2> APELLIDOS </h2> </label>
+                <input type="text" id="apellidos" name="apellidos" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóú](\s[A-ZÁÉÍÓÚÑ][a-záéíóú])?|[A-ZÁÉÍÓÚÑ][a-záéíóú]+(\s[A-ZÁÉÍÓÚÑ][a-záéíóú]+){1,2}+\s[A-ZÁÉÍÓÚÑ][a-záéíóú]?" title="Ingresa un apellido coherente." required>
+            </div>
+            <div class="form-group">
+                <label for="codigo-postal"> <h2> CÓDIGO POSTAL </h2></label>
+                <input type="text" id="codigo-postal" name="codigo-postal" pattern="[0-9]{5}" title="El código postal debe tener 5 dígitos numéricos" required>
+            </div>
+            <div class="form-group">
+                <label for="correo"> <h2> CORREO ELECTRÓNICO </h2></label>
+                <input type="email" id="correo" name="correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ingresa un correo válido." required>
+            </div>
+            <div class="form-group">
+                <label for="telefono"> <h2> NÚMERO DE TELÉFONO </h2></label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9,15}" title="Ingresa un número de teléfono válido (9-15 dígitos)" required>
+            </div>
+            <div class="form-group">
+                <label> <h2> ¿Eres más de Alioli o de Cheddar? </h2></label>
+                <select id="cheddaralioli" name="cheddaralioli">
+                    <option value="opcion1"> <h2> CHEDDAR </h2> </option>
+                    <option value="opcion2"> <h2> ALIOLI </h2></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label> <h2> ELIGE </h2>> </label>
+                <input type="checkbox" id="Hamburguesa" name="comida" value="Hamburguesa">
+                <label for="hamburguesa"> <h2> HAMBURGUESA </h2> </label>
+                <input type="checkbox" id="Campero" name="comida" value="Campero">
+                <label for="Campero"> <h2> CAMPERO </h2> </label>
+                <input type="checkbox" id="Bocadillo" name="comida" value="Bocadillo">
+                <label for="Bocadillo"> <h2> BOCADILLO </h2> </label>
+                <input type="checkbox" id="patatas" name="comida" value="patatas">
+                <label for="patatas"> <h2> PATATAS CON ALIOLI Y CHEDDAR </h2> </label>
+                <input type="checkbox" id="Pollo" name="comida" value="Pollo">
+                <label for="Pollo"> <h2> DONUTS DE POLLO CON CHEDDAR </h2> </label>
+            </div>
+            <div class="sugerencias">
+                <h2> Siempre estamos abiertos a críticas constructivas y sugerencias. Déjanos un comentario. </h2>
+                <textarea id="sugerencias" name="sugerencias" rows="4" cols="100"></textarea>
+            </div>
+
+            <div class="proteccionDatos">
+                <h2>Al enviar este formulario, aceptas que tus datos serán almacenados en nuestra base de datos para futuras referencias.</h2>
+                <input type="submit" value="Registrar Nuevo Usuario" class="nuevoUsuario">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

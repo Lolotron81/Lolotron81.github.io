@@ -1,0 +1,101 @@
+body {
+    background-color: #5ec7ed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow-x: hidden;
+}
+
+.cabecera {
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 15vh;
+}
+
+h1 {
+    color: cadetblue;
+    font-family: 'Lora', serif;
+}
+
+h2 {
+    color: rgb(81, 77, 77);
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.imagencabecera {
+    display: flex;
+    width: 15vw;
+    ;
+    height: 15vh;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: aqua;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: dimgrey;
+}
+
+.parteCentral {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 99vw;
+    height: 65vh;
+    margin-top: 20px;
+}
+
+.izquierda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    width: 35vw;
+}
+
+p {
+    color: beige;
+}
+
+.derecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    width: 35vw;
+}
+
+img {
+    width: 35vw;
+    height: 65vh;
+}
+
+.textoIndex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 65vh;
+    width: 30vw;
+    color: black;
+    font-family: 'Lora', serif;
+    font-size: xx-large;
+}
